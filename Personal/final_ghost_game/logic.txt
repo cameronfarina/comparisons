@@ -1,0 +1,85 @@
+Ghost is a written or spoken word game in which players take turns adding letters to a growing word fragment, trying not to be the one to complete a valid word. 
+
+Each fragment must be the beginning of an actual word, and usually some minimum is set on the length of a word that counts, such as three or four letters.
+
+The player who completes a word loses the round and earns a "letter" (as in the basketball game horse), with players being eliminated when they have been given all five letters of the word "ghost".
+
+1. we start the game 
+2. game asks each player for a number 1 through 10, and the player who gets their number closest to the randomized number (1-10) gets to choose who starts, gets.chomp either "me" or "other_player".
+3. first player enters a letter
+4. check if entered letter is valid by seeing if it a letter of the alphabet and if any? words in the dictionary matches the fragment plus that letter
+5. if it is valid, add the player's guess to the fragment and switch to next player  
+6. repeat steps 2-5
+
+
+files - dictionary.txt, play_ghost.rb, ghost.rb, player.rb
+classes - Game, Player
+
+class attributes and methods -
+    Player
+        @name = name
+
+        #get_guess
+
+    Game
+        @fragment = ""
+        @players = Players passed in initialize
+        @dictionary = a set of dictionary words from dictionary.txt
+        @lose_word = "GHOST"
+        @losses = Hash.new(0)
+
+        #run
+            !#game_over?
+                
+                #take_turn(#current_player)
+                    puts "enter a letter"
+                    guess = #current_player.get_guess
+                    if #valid_play?(guess)
+                        @fragment += guess
+                        #next_player!
+                    else 
+                        puts "invalid guess, try again"
+                        #take_turn(#current_player)
+                    end
+        end
+        
+        #previous_player
+
+        #play_round
+            when a word is spelled out
+            increment the losers score
+            set @fragment to ""
+            keep calling this method until game_over?
+            
+            @losses.each do |player, losses|
+            losses[player] = losses
+            losses[player] += 1
+         end
+
+        # fragment_complete?
+        check if our word is included in the dictionary AND NOT a subset of another word in the dictionary "club" "clubbing"
+            dictionary.include?(@fragment) 
+        end
+        
+        #record(player)
+            @losses[player] => "" set it == to @lose_word[0..@losses[player].length+1]
+        end
+        
+        def display_standings
+            @losses
+        end
+
+        def run 
+            self.play_round
+        end
+        
+        def game_over?
+            @losses.values.any? { |score| score == "GHOST" }
+        end
+
+
+
+
+
+
+        winning_guess
