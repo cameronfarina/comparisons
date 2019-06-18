@@ -23,6 +23,7 @@
   font-size: 32px;
   font-weight: 600;
   text-align: center;
+  margin-top: 50px;
 }
 
 .content-header {
@@ -63,7 +64,7 @@ hr {
 }
 
 @media screen and (max-width: 600px) {
-  .col {
+  .iphone-compare-model-columns {
     width: 100%;
   }
 }
