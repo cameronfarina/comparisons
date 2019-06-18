@@ -1,44 +1,50 @@
-body {
+.main-content {
   max-width: 960px;
-  margin: auto;
+  margin: 0 auto;
   font-family: 'Roboto', sans-serif;
 }
-h1 {
+
+
+.iphone-compare-model-columns {
+  text-align: center; 
+  width: 33%;
+  display: inline-block;
+}
+
+.column-content {
+  background-color: #f7f7f7;
+  padding: 7px;
+  margin: 7px;
+  border-radius: 8px;
+}
+
+.compare-iphone-model-header {
   text-align: center;
   font-size: 32px;
   font-weight: 600;
   text-align: center;
 }
-.col {
-  box-sizing: border-box;
-  margin-bottom: 14px;
-  padding-bottom: 46px;
-  margin-left: 14px;
-  border-radius: 8px;
-  background: #f7f7f7;
-  overflow: hidden; 
-  text-align: center; 
-  width: 31%;
-  display: inline-block;
+
+.content-header {
+  text-align: center;
 }
 
-.row:after {
-  max-width: 500px;
-  margin: auto;
-  content: "";
-  display: table;
-  clear: both;
+
+.phone-model-row {
+  margin: 7px;
 }
 
 ul li {
   text-align: left;
   margin: 15px;
+  font-family: Arial, Helvetica, sans-serif ;
 }
 
 ul {
   margin-top: 25px;
+  margin-left: 10px;
   text-align: center;
-  padding: 1;
+  padding: 0;
 }
 
 img {
