@@ -1,7 +1,7 @@
 .main-content {
   max-width: 900px;
   margin: 0 auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto';
 }
 
 .iphone-compare-model-columns {
@@ -24,11 +24,10 @@
 }
 
 .compare-iphone-model-header {
-  text-align: center;
   font-size: 32px;
-  font-weight: 600;
-  text-align: center;
-  margin-top: 50px;
+  font-weight: bold;
+  margin: 50px auto;
+  font-family: 'Roboto';
 }
 
 .content-header {
