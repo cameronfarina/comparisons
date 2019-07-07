@@ -1,3 +1,6 @@
+body {
+  background: white;
+}
 .main-content {
   max-width: 900px;
   margin: 0 auto;
@@ -28,6 +31,7 @@
   font-weight: bold;
   margin: 50px auto;
   font-family: 'Roboto';
+  color: black;
 }
 
 .content-header {
@@ -80,14 +84,17 @@ hr {
     margin-left: 20px;
     margin-right: 20px;
 }
-@media screen and (max-width: 992px) {
-  /* tablet */
-  .iphone-compare-model-columns {
-    width: 40%;
-  }
-  img {
-    width: 80%;
-  }
+
+#learn-more {
+  padding: 7px;
+  box-shadow: 0 1px 2px #888888;
+  background: #c6edfa;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#learn-more:hover {
+  background: #8ae2ff;
 }
 
 @media screen and (max-width: 600px){
@@ -100,3 +107,12 @@ hr {
   }
 }
 
+@media screen and (max-width: 992px) {
+  /* tablet */
+  .iphone-compare-model-columns {
+    width: 40%;
+  }
+  img {
+    width: 80%;
+  }
+}
