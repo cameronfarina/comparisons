@@ -43,18 +43,22 @@ body {
   margin: 7px;
 }
 
-.wrapper ul {
+.learn-more-list {
   list-style: none;
   margin-top: 25px;
   margin-left: 10px;
   text-align: center;
   padding: 0;
+  display: none;
+}
+
+.clicked {
+  display: block;
 }
 
 
 .wrapper li {
   text-align: left;
-  /* text-indent: -1em; */
   margin: 15px;
   font-family: Arial, Helvetica, sans-serif ;
 }
@@ -67,7 +71,6 @@ li::before {
     position: relative;
     top: -1px;
 }
-
 
 .wrapper img {
   max-width: 100%;
@@ -98,8 +101,15 @@ hr {
 }
 
 .in-learn-more {
-  border: 1px solid yellow;
+  border: 1px solid red;
+  display: block;
 }
+
+
+
+
+
+
 
 @media screen and (max-width: 600px){
   /* mobile */
