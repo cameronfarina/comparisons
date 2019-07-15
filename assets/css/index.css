@@ -1,10 +1,52 @@
 body {
-  background: #a9dbb8;
+  background: rgba(230, 230, 230, 0.95);
+  background-color: transparent;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.global-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 48px;
+  background: rgba(45, 45, 45, 0.98);
+  font-size: 17px;
+}
+
+.nav-link-text {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link-text:hover {
+  color: #ccc;
+}
+
+.nav-list {
+  margin: 0 auto;
+  top: 10px;
+  vertical-align: middle;
+  color: white;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  list-style: none;
 }
 
 .compare-iphone-models-header {
   text-align: center;
-  color: white;
+  color: #111;
+  font-family: "Roboto";
+  font-size: 64px;
+  line-height: 1.0625;
+  font-weight: 600;
+  letter-spacing: -0.009em;
 }
 
 .iphone-compare-model-column {
@@ -26,7 +68,8 @@ body {
 
 .column-content {
   background-color: #f7f7f7;
-  padding: 7px;
+  padding-top: 60px;
+  padding-bottom: 20px;
   margin: 7px;
   border-radius: 8px;
 }
@@ -55,7 +98,7 @@ body {
   text-align: left;
 }
 
-li::before {
+.learn-more-list li::before {
   content: "\002022";
   color: #888;
   padding-right: 0.5em;
@@ -65,10 +108,12 @@ li::before {
 }
 
 img {
-  max-width: 80%;
-  max-height: 80%;
-  margin: 0 auto;  
+  margin-top: 100px;
+  margin: 0 auto;
   display: block;
+  height: 222px;
+  margin-bottom: 32px;
+  background-position: bottom center;
 }
 
 hr {
@@ -95,21 +140,26 @@ hr {
 
 .modal {
   display: none;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-top: 5%;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 50px;
+  margin-top: 50px;
   overflow: auto;
   height: 100%;
+  width: auto;
   border-radius: 8px;
   box-sizing: border-box;
   text-align: center;
+  /* box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.3); */
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
 }
 
 .modal-content {
-  background-color: #ecebeb;
+  background-color: white;
   box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
   animation-name: modalopen;
   animation-duration: 0.5s;
+  padding: 50px;
 }
 
 .modal-header h2,
@@ -118,16 +168,24 @@ hr {
 }
 
 .modal-header {
-  background: #dba9d4;
-  padding: 15px;
-  color: white;
+  font-family: "Roboto";
+  padding: 50px;
+  font-size: 28px;
+  color: black;
   text-align: center;
 }
 
 .closeBtn {
-  color: white;
-  float: right;
-  font-size: 25px;
+  color: #ccc;
+  font-size: 60px;
+  float: left;
+  top: -50px;
+  left: -30px;
+  position: relative;
+  /* display: inline-block; */
+  font-style: normal;
+  font-weight: inherit;
+  line-height: 1;
 }
 
 .closeBtn:hover,
@@ -137,26 +195,26 @@ hr {
   text-decoration: none;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
   .modal {
     margin-left: 5%;
     margin-right: 5%;
   }
 
   .iphone-compare-model-column {
-    width: 99%;
+    width: 300px;
+    margin: 0 auto;
   }
 
   img {
     display: block;
-    width: 50%;
     margin: 0 auto;
   }
 }
 
-@media screen and (max-width: 1140px) and (min-width: 751px) {
+@media screen and (max-width: 1200px) and (min-width: 801px) {
   .iphone-compare-model-column {
-    width: 49%;
+    width: 40%;
   }
 
   .modal {
@@ -166,7 +224,6 @@ hr {
 
   img {
     display: block;
-    width: 50%;
     margin: 0 auto;
   }
 }
