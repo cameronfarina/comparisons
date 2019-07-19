@@ -26,19 +26,19 @@
 
   let filterInput = document.getElementById('filterInput');
 
-  filterInput.addEventListener('keyup', filterNames);
-  function filterNames(){
-    let filterValue = document.getElementById('filterInput').value.toUpperCase();
-    let ul = document.getElementsByClassName('learn-more-list');
+  filterInput.addEventListener('keyup', filterSearch);
+  function filterSearch(){
+    let filteredUserSearch = document.getElementById('filterInput').value.toUpperCase();
+    let phoneColumnCollection = document.getElementsByClassName('learn-more-list');
     
-    for(let i = 0; i < ul.length; i++) {
-      let ourUl = ul[i];
-      for (let j = 0; j < ourUl.children.length; j++) {
-        let result = ourUl.children[j];
-        if (result.innerHTML.toUpperCase().indexOf(filterValue) > -1) {
-        result.style.display = '';
+    for(let i = 0; i < phoneColumnCollection.length; i++) {
+      let phoneColumnUL = phoneColumnCollection[i];
+      for (let j = 0; j < phoneColumnUL.children.length; j++) {
+        let individualDescription = phoneColumnUL.children[j];
+        if (individualDescription.innerHTML.toUpperCase().indexOf(filteredUserSearch) > -1) {
+        individualDescription.style.display = '';
       } else {
-        result.style.display = 'none';
+        individualDescription.style.display = 'none';
       }
     }
   }
