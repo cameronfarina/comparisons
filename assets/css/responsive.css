@@ -1,0 +1,32 @@
+@media screen and (max-width: 800px) {
+  .modal {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .iphone-compare-model-column {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 801px) {
+  .iphone-compare-model-column {
+    width: 40%;
+  }
+
+  .modal {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}

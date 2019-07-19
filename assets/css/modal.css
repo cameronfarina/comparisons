@@ -1,0 +1,38 @@
+.modal {
+  display: none;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  overflow: auto;
+  height: 100%;
+  width: auto;
+  border-radius: 8px;
+  box-sizing: border-box;
+  z-index: 1;
+  position: relative;
+  margin-top: -200px;
+  text-align: center;
+  -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.modal-content {
+  background-color: white;
+  box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 0.5s;
+  padding: 50px;
+}
+
+.modal-header h2,
+.modal-header h3 {
+  margin: 0;
+}
+
+.modal-header {
+  font-family: "Roboto";
+  padding: 50px;
+  font-size: 28px;
+  color: black;
+  text-align: center;
+}

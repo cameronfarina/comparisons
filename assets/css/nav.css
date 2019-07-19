@@ -1,0 +1,32 @@
+.global-nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 9999;
+  display: block;
+  margin: 0;
+  width: 100%;
+  height: 48px;
+  background: rgba(45, 45, 45, 0.98);
+  font-size: 17px;
+}
+
+.nav-link-text {
+  color: white;
+  text-decoration: none;
+}
+
+.nav-link-text:hover {
+  color: #ccc;
+}
+
+.nav-list {
+  margin: 0 auto;
+  top: 10px;
+  color: white;
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  list-style: none;
+}
