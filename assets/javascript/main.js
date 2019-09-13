@@ -111,7 +111,6 @@ async function bubbleSort(delay = 300) {
   let columns = document.querySelectorAll(".column");
   for (let i = 0; i < columns.length - 1; i += 1) {
     for (let j = 0; j < columns.length - i - 1; j += 1) {
-      // debugger;
       columns[j].style.backgroundColor = "#e82727";
       columns[j + 1].style.backgroundColor = "#e82727";
 
