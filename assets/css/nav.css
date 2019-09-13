@@ -11,6 +11,11 @@
   background: rgba(45, 45, 45, 0.98);
   font-size: 17px;
 }
+.nav-link-mac,
+.nav-link-ipad,
+.nav-link-iphone {
+  text-decoration: none;
+}
 
 .nav-link-text {
   color: white;
