@@ -80,7 +80,6 @@
   font-size: 17px;
 }
 
-
 .quick-content {
   width: 600px;
   height: 250px;
@@ -89,7 +88,7 @@
   color: white;
 }
 .quick-column {
-  width: 29px;
+  width: 28px;
   color: black;
   position: absolute;
   left: 0;
@@ -100,6 +99,6 @@
 .quick-column__id {
   position: absolute;
   top: -24px;
-  width: 100%;
-  text-align: center;
+  left: 2px;
+  font-size: 17px;
 }
