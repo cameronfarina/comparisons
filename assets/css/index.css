@@ -118,9 +118,27 @@ hr {
   font-weight: inherit;
   line-height: 1;
 }
+.close2Btn {
+  color: #ccc;
+  font-size: 60px;
+  float: left;
+  top: -50px;
+  left: -30px;
+  position: relative;
+  /* display: inline-block; */
+  font-style: normal;
+  font-weight: inherit;
+  line-height: 1;
+}
 
 .closeBtn:hover,
 .closeBtn:focus {
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+.close2Btn:hover,
+.close2Btn:focus {
   color: black;
   cursor: pointer;
   text-decoration: none;

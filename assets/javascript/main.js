@@ -5,11 +5,13 @@
   const modalBtn = document.getElementById("modalBtn");
   const algoBtn = document.getElementById("algoBtn");
   const closeBtn = document.getElementsByClassName("closeBtn")[0];
+  const close2Btn = document.getElementsByClassName("close2Btn")[0];
   const headerTitle = document.getElementById("title");
 
   modalBtn.addEventListener("click", openModal);
   algoBtn.addEventListener("click", openAlgos);
   closeBtn.addEventListener("click", closeModal);
+  close2Btn.addEventListener("click", closeModal);
   body.addEventListener("click", handleModalClick);
 
   function openModal() {
@@ -38,6 +40,7 @@
   function handleModalClick(e) {
     if (e.target === body) {
       modal.style.display = "none";
+      algoModal.style.display = "none";
       headerTitle.style.visibility = "visible";
     }
   }
@@ -65,10 +68,10 @@ function filterSearch(evt) {
 }
 
 const content = document.querySelector(".sorting-content");
-
-function generateColumns(num = 15) {
+const algorithmButton = document.getElementById("algoBtn");
+function generateColumns(num = 16) {
   for (let i = 0; i <= num; i++) {
-    const value = Math.floor(Math.random() * 100);
+    const value = Math.floor(Math.random() * 100 + 1);
 
     const column = document.createElement("div");
     column.classList.add("column");
@@ -108,6 +111,7 @@ async function bubbleSort(delay = 300) {
   let columns = document.querySelectorAll(".column");
   for (let i = 0; i < columns.length - 1; i += 1) {
     for (let j = 0; j < columns.length - i - 1; j += 1) {
+      // debugger;
       columns[j].style.backgroundColor = "#e82727";
       columns[j + 1].style.backgroundColor = "#e82727";
 
@@ -133,5 +137,7 @@ async function bubbleSort(delay = 300) {
   }
 }
 
-generateColumns();
-bubbleSort();
+algorithmButton.addEventListener("click", () => {
+  generateColumns();
+  bubbleSort();
+});
