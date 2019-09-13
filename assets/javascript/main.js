@@ -69,7 +69,7 @@ function filterSearch(evt) {
 
 const content = document.querySelector(".sorting-content");
 const algorithmButton = document.getElementById("algoBtn");
-function generateColumns(num = 16) {
+function generateColumns(num = 15) {
   for (let i = 0; i <= num; i++) {
     const value = Math.floor(Math.random() * 100 + 1);
 
